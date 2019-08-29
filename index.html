@@ -1,0 +1,39 @@
+<!--This is a weather app that shows weather of main cities
+Author: Ajith C Ravi
+Description: This is a weather app that shows weather of pre-defined some cities-->
+
+<!DOCTYPE html>
+<script type="text/javascript" src="weather.js"></script>
+<html>
+    <head>
+        <title>Weather App</title>
+    </head>
+
+    <body>
+        <div id="city_state"></div>
+        <div id="day_time"></div>
+        <div id="climate"></div>
+        <div id="temp"></div>
+        <div id="search" >
+        <h2>Enter city name</h2>
+        <form name="cityName" action="weather.html" onsubmit="return validateForm()" method="post">
+            <input list="cities" name="city" placeholder="City, State">
+            <datalist id="cities" >
+                <option value="Ahmedabad, Gujarat"></option>
+                <option value="Bangalore, Karnataka"></option>
+                <option value="Chennai, Tamil Nadu"></option>
+                <option value="Hosur, Tamil Nadu"></option>
+                <option value="Hyderabad, Andhra Pradesh"></option>
+                <option value="Jaipur, Rajastan"></option>
+                <option value="Kolkata, West Bengal"></option>
+                <option value="Mumbai, Maharashtra"></option>
+                <option value="New Delhi, Delhi"></option>
+                <option value="Pune, Maharashtra"></option>
+                <option value="Surat, Gujarat"></option>
+                <option value="Tirunelveli, Tamil Nadu"></option>
+            </datalist>
+            <input id="sub" type="submit">
+        </form>
+        </div>
+    </body>
+</html>
