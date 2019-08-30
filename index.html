@@ -1,5 +1,4 @@
 <!--This is a weather app that shows weather of main cities
-Author: Ajith C Ravi
 Description: This is a weather app that shows weather of pre-defined some cities-->
 
 <!DOCTYPE html>
@@ -9,21 +8,21 @@ Description: This is a weather app that shows weather of pre-defined some cities
         <title>Weather App</title>
     </head>
 
-    <body>
-        <div id="city_state"></div>
-        <div id="day_time"></div>
+    <body onload="day(), setTimeout();">
+        <div></div>
+        <div id="cityState"></div>
+        <div id="dayTime"></div>
         <div id="climate"></div>
-        <div id="temp"></div>
+        <div id="temperature"> <div id="degreeScale" onclick="">&#8451;</div><div id="fahrenheitScale" onclick="">&#8457;</div></div>
         <div id="search" >
         <h2>Enter city name</h2>
-        <form name="cityName" action="weather.html" onsubmit="return validateForm()" method="post">
-            <input list="cities" name="city" placeholder="City, State">
+            <input id="city" list="cities" placeholder="City, State" onchange="return validateForm()">
             <datalist id="cities" >
                 <option value="Ahmedabad, Gujarat"></option>
                 <option value="Bangalore, Karnataka"></option>
                 <option value="Chennai, Tamil Nadu"></option>
                 <option value="Hosur, Tamil Nadu"></option>
-                <option value="Hyderabad, Andhra Pradesh"></option>
+                <option value="Hyderabad, Telangana"></option>
                 <option value="Jaipur, Rajastan"></option>
                 <option value="Kolkata, West Bengal"></option>
                 <option value="Mumbai, Maharashtra"></option>
@@ -32,8 +31,6 @@ Description: This is a weather app that shows weather of pre-defined some cities
                 <option value="Surat, Gujarat"></option>
                 <option value="Tirunelveli, Tamil Nadu"></option>
             </datalist>
-            <input id="sub" type="submit">
-        </form>
         </div>
     </body>
 </html>
