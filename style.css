@@ -53,5 +53,6 @@ Description: This is a weather app that shows weather of pre-defined some cities
 }
 
 #search{
-    margin-top: 30%;
+    position: fixed;
+    top: 60%;
 }
