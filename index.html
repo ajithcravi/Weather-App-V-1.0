@@ -7,7 +7,7 @@ Description: This is a weather app that shows weather of pre-defined some cities
         <title>Weather App</title>
     </head>
 
-    <body onload="day(), setTimeout();">
+    <body onload="day(), setTimeout(updateClock, 1000);">
         <div id="leftHalf">
             <div id="leftContent">
                 <h1 id="firstWord">Weather App</h1>
@@ -19,9 +19,11 @@ Description: This is a weather app that shows weather of pre-defined some cities
                 <div id="dayTime"></div>
                 <div id="climate"></div>
                 <div id="temperature"></div>
+                <div><a onclick= "return FToC()">&#8451;</a>
+                    <a onclick= "return CToF()">&#8457;</a></div>
                 <div id="search" >
                     <h5>Enter city name <br>
-                        <input id="city" list="cities" placeholder="City, State" onchange="return validateForm()">
+                        <input id="city" list="cities" placeholder="City, State" onchange="return returnCity()">
                         <datalist id="cities" >
                             <option value="Ahmedabad, Gujarat"></option>
                             <option value="Bangalore, Karnataka"></option>

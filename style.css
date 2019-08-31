@@ -1,6 +1,7 @@
 /*This .css file belongs to the Weather App
 Description: This is a weather app that shows weather of pre-defined some cities*/
 
+/*Left section*/
 #leftHalf {
     position: relative;
     width: 50%;
@@ -11,7 +12,13 @@ Description: This is a weather app that shows weather of pre-defined some cities
     font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
     font-size: 1.75em;
 }
-  
+
+#rightContent {
+    padding-left: 10%;
+    padding-top: 15%;
+}
+
+/*Right Section*/
 #rightHalf {
     position: relative;
     width: 50%;
@@ -22,36 +29,36 @@ Description: This is a weather app that shows weather of pre-defined some cities
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#rightContent {
-    padding-left: 10%;
-    padding-top: 15%;
-}
-
 #leftContent {
     padding-left: 25%;
     padding-top: 40%;
 }
 
+/*City and state styling*/
 #cityState{
     font-size: 1.5em;
 }
 
+/*Dat and Time styling*/
 #dayTime{
     margin-top: 1%;
     font-size: 0.75em;
 }
 
+/*CLimate styling*/
 #climate{
     margin-top: 1%;
     font-size: 0.75em;
 }
 
+/*Temperature stylin*/
 #temperature{
     margin-top: 5%;
     font-size: 2em;
     font-weight: bolder;
 }
 
+/*Search bar styling*/
 #search{
     position: fixed;
     top: 60%;
