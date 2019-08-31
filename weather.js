@@ -17,15 +17,14 @@ const cityWeather = [
   {loca: "Tirunelveli, Tamil Nadu", temperature: 34, weather: "Mostly Cloudy" }
 ]
 
-
-
 function validateForm() {
     var cityName = document.getElementById("city").value;
     var cityFind = cityWeather.filter(function (something) { if (something.loca.includes(cityName))return something});
-    var temp = cityFind[0].temperature;
+    var temp = cityFind[0].temperature + " &#8451;";
     var climate = cityFind[0].weather;
     return document.getElementById("cityState").innerHTML = cityName, document.getElementById("temperature").innerHTML = temp, document.getElementById("climate").innerHTML = climate;
   }
+
 function day(){
     //Code for day
     const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday",];
@@ -61,6 +60,5 @@ function day(){
       var dayTag = "pm";
     }
     return document.getElementById("dayTime").innerHTML = day + ", " + hours + ":" + minutes + " " + dayTag;
-    setTimeout(updateClock, 1000);
-    updateClock();    
+    setTimeout(updateClock, 1000); 
 }

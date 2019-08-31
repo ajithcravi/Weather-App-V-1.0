@@ -2,35 +2,44 @@
 Description: This is a weather app that shows weather of pre-defined some cities-->
 
 <!DOCTYPE html>
-<script type="text/javascript" src="weather.js"></script>
 <html>
     <head>
         <title>Weather App</title>
     </head>
 
     <body onload="day(), setTimeout();">
-        <div></div>
-        <div id="cityState"></div>
-        <div id="dayTime"></div>
-        <div id="climate"></div>
-        <div id="temperature"> <div id="degreeScale" onclick="">&#8451;</div><div id="fahrenheitScale" onclick="">&#8457;</div></div>
-        <div id="search" >
-        <h2>Enter city name</h2>
-            <input id="city" list="cities" placeholder="City, State" onchange="return validateForm()">
-            <datalist id="cities" >
-                <option value="Ahmedabad, Gujarat"></option>
-                <option value="Bangalore, Karnataka"></option>
-                <option value="Chennai, Tamil Nadu"></option>
-                <option value="Hosur, Tamil Nadu"></option>
-                <option value="Hyderabad, Telangana"></option>
-                <option value="Jaipur, Rajastan"></option>
-                <option value="Kolkata, West Bengal"></option>
-                <option value="Mumbai, Maharashtra"></option>
-                <option value="New Delhi, Delhi"></option>
-                <option value="Pune, Maharashtra"></option>
-                <option value="Surat, Gujarat"></option>
-                <option value="Tirunelveli, Tamil Nadu"></option>
-            </datalist>
+        <div id="leftHalf">
+            <div id="leftContent">
+                <h1 id="firstWord">Weather App</h1>
+            </div>
+        </div>
+        <div id="rightHalf">
+            <div id="rightContent">
+                <div id="cityState"></div>
+                <div id="dayTime"></div>
+                <div id="climate"></div>
+                <div id="temperature"></div>
+                <div id="search" >
+                    <h5>Enter city name <br>
+                        <input id="city" list="cities" placeholder="City, State" onchange="return validateForm()">
+                        <datalist id="cities" >
+                            <option value="Ahmedabad, Gujarat"></option>
+                            <option value="Bangalore, Karnataka"></option>
+                            <option value="Chennai, Tamil Nadu"></option>
+                            <option value="Hosur, Tamil Nadu"></option>
+                            <option value="Hyderabad, Telangana"></option>
+                            <option value="Jaipur, Rajastan"></option>
+                            <option value="Kolkata, West Bengal"></option>
+                            <option value="Mumbai, Maharashtra"></option>
+                            <option value="New Delhi, Delhi"></option>
+                            <option value="Pune, Maharashtra"></option>
+                            <option value="Surat, Gujarat"></option>
+                            <option value="Tirunelveli, Tamil Nadu"></option>
+                        </datalist> </h5>
+                </div>
+            </div>
         </div>
     </body>
+<script type="text/javascript" src="weather.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
 </html>

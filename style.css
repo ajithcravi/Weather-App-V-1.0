@@ -1,0 +1,57 @@
+/*This .css file belongs to the Weather App
+Description: This is a weather app that shows weather of pre-defined some cities*/
+
+#leftHalf {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 98vh;
+    background-color: #0080ff;
+    z-index: 1010101010;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+    font-size: 1.75em;
+}
+  
+#rightHalf {
+    position: relative;
+    width: 50%;
+    float: right;
+    height: 98vh;
+    background-color: #eee;
+    z-index: 1010101010;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rightContent {
+    padding-left: 10%;
+    padding-top: 15%;
+}
+
+#leftContent {
+    padding-left: 25%;
+    padding-top: 40%;
+}
+
+#cityState{
+    font-size: 1.5em;
+}
+
+#dayTime{
+    margin-top: 1%;
+    font-size: 0.75em;
+}
+
+#climate{
+    margin-top: 1%;
+    font-size: 0.75em;
+}
+
+#temperature{
+    margin-top: 5%;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#search{
+    margin-top: 30%;
+}
