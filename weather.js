@@ -3,24 +3,24 @@ Description: This is a weather app that shows weather of pre-defined some cities
 
 //Code to get city and state once entered
 const cityWeather = [
-  {loca: "Ahmedabad, Gujarat", temperature: 39, weather: "Haze 🌫️"},
-  {loca: "Bangalore, Karnataka", temperature: 28, weather: "Cloudy ☁️️️☁️"},
-  {loca: "Chennai, Tamil Nadu", temperature: 37, weather: "Cloudy ☁️☁️"},
-  {loca: "Hosur, Tamil Nadu", temperature: 28, weather: "Cloudy ☁️☁️"},
-  {loca: "Hyderabad, Telangana", temperature: 28, weather: "Thunderstorm ⛈️"},
-  {loca: "Jaipur, Rajastan", temperature: 32, weather: "Mostly Cloudy ☁️"},
-  {loca: "Kolkata, West Bengal", temperature: 35, weather: "Partly Cloudy ☁️"},
-  {loca: "Mumbai, Maharashtra", temperature: 29, weather: "Cloudy ☁️☁️"},
-  {loca: "New Delhi, Delhi", temperature: 39, weather: "Mostly Cloudy ☁️"},
-  {loca: "Pune, Maharashtra", temperature: 28, weather: "Cloudy ☁️☁️"},
-  {loca: "Surat, Gujarat", temperature: 38, weather: "Mostly Cloudy ☁️"},
-  {loca: "Tirunelveli, Tamil Nadu", temperature: 34, weather: "Mostly Cloudy️ ☁️"}
+  {location: "Ahmedabad, Gujarat", temperature: 39, weather: "Haze 🌫️"},
+  {location: "Bangalore, Karnataka", temperature: 28, weather: "Cloudy ☁️️️☁️"},
+  {location: "Chennai, Tamil Nadu", temperature: 37, weather: "Cloudy ☁️☁️"},
+  {location: "Hosur, Tamil Nadu", temperature: 28, weather: "Cloudy ☁️☁️"},
+  {location: "Hyderabad, Telangana", temperature: 28, weather: "Thunderstorm ⛈️"},
+  {location: "Jaipur, Rajastan", temperature: 32, weather: "Mostly Cloudy ☁️"},
+  {location: "Kolkata, West Bengal", temperature: 35, weather: "Partly Cloudy ☁️"},
+  {location: "Mumbai, Maharashtra", temperature: 29, weather: "Cloudy ☁️☁️"},
+  {location: "New Delhi, Delhi", temperature: 39, weather: "Mostly Cloudy ☁️"},
+  {location: "Pune, Maharashtra", temperature: 28, weather: "Cloudy ☁️☁️"},
+  {location: "Surat, Gujarat", temperature: 38, weather: "Mostly Cloudy ☁️"},
+  {location: "Tirunelveli, Tamil Nadu", temperature: 34, weather: "Mostly Cloudy️ ☁️"}
 ]
 
 function returnCity() {
     var cityName = document.getElementById("city").value;
-    var cityFind = cityWeather.filter(function (something) { if (something.loca.includes(cityName))return something});
-    var temp = cityFind[0].temperature + " &#8451;";
+    var cityFind = cityWeather.filter(function (something) { if (something.location.includes(cityName))return something});
+    var temp = cityFind[0].temperature;
     var climate = cityFind[0].weather;
     return document.getElementById("cityState").innerHTML = cityName, document.getElementById("temperature").innerHTML = temp, document.getElementById("climate").innerHTML = climate;
   }
@@ -63,17 +63,39 @@ function day(){
     setTimeout(updateClock, 1000); 
 }
 
-function cToF(){
-  var cityName = document.getElementById("city").value;
-  var cityFind = cityWeather.filter(function (something) { if (something.loca.includes(cityName))return something});
-  var celcius = cityFind[0].temperature;
-  var fahrenheit = (celcius * 9/5) + 32;
-  return document.getElementById("temperature").innerHTML = fahrenheit;
-}
+// function cToF(){
+//   var cityName = document.getElementById("city").value;
+//   var cityFind = cityWeather.filter(function (something) { if (something.location.includes(cityName))return something});
+//   var celcius = cityFind[0].temperature;
+//   var fahrenheit = (celcius * 9/5) + 32;
+//   return document.getElementById("temperature").innerHTML = fahrenheit;
+// }
 
-function FToC(){
+// function FToC(){
+//   var cityName = document.getElementById("city").value;
+//   var cityFind = cityWeather.filter(function (something) { if (something.location.includes(cityName))return something});
+//   var celcius = cityFind[0].temperature;
+//   return document.getElementById("temperature").innerHTML = celcius;
+// }
+
+
+
+
+
+
+function cal(val){
+  var x;
   var cityName = document.getElementById("city").value;
-  var cityFind = cityWeather.filter(function (something) { if (something.loca.includes(cityName))return something});
+  var cityFind = cityWeather.filter(function (something) { if (something.location.includes(cityName))return something});
   var celcius = cityFind[0].temperature;
-  return document.getElementById("temperature").innerHTML = celcius;
+  
+  if(val === 'C'){
+    
+    return document.getElementById("temperature").innerHTML = celcius;
+
+  }
+  else if(val === 'F'){
+    
+    return document.getElementById("temperature").innerHTML = (Math.round(((celcius * 9/5) + 32)*10))/10;
+  }
 }

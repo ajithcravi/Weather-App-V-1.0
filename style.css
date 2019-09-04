@@ -63,3 +63,21 @@ Description: This is a weather app that shows weather of pre-defined some cities
     position: fixed;
     top: 60%;
 }
+
+#cel:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#cel:{
+    color: blue;
+}
+
+#fah:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#fah:active{
+    color: blue;
+}

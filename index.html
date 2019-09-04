@@ -18,9 +18,15 @@ Description: This is a weather app that shows weather of pre-defined some cities
                 <div id="cityState"></div>
                 <div id="dayTime"></div>
                 <div id="climate"></div>
-                <div id="temperature"></div>
+                <div >
+                    <span id="temperature"></span>
+                    <span id="cel" onclick="cal('C')">&deg;C</span>
+                    <span id="fah" onclick="cal('F')">&deg;F</span>
+                    </div>
+
+                <!-- </div>
                 <div><a onclick= "return FToC()">&#8451;</a>
-                    <a onclick= "return CToF()">&#8457;</a></div>
+                    <a onclick= "return CToF()">&#8457;</a></div> -->
                 <div id="search" >
                     <h5>Enter city name <br>
                         <input id="city" list="cities" placeholder="City, State" onchange="return returnCity()">
@@ -41,6 +47,9 @@ Description: This is a weather app that shows weather of pre-defined some cities
                 </div>
             </div>
         </div>
+        <!-- <h1 id="sample">hello</h1>
+        <button onclick="cal('F')">click1</button>
+        <button onclick="cal('C')">click2</button> -->
     </body>
 <script type="text/javascript" src="weather.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
