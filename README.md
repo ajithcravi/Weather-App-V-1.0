@@ -1,8 +1,2 @@
-Hello coder, I am Ajith C Ravi.
-Thanks for taking time to go through my code.
-For your information, this folder consists of .html and .js files of weather app.
-So this is what it does, it has some pre-set weather values of some pre-set cities
-    and shows them on demand.
-This is just a sample project so the weather values are assumed.
-
-This is a weather app that gives temperature and weather condition of the city selected.
+#Weather App V 1.0
+Weather is one of the major factors that affects our day-to-day routine. Starting from a good morning till a lovely night, weather plays an important role. There are tonnes of methods to forecast this weather but only a few brings the result whenever and wherever we want. This project is such a web application, designed to give the forecasted weather result to the end user.
