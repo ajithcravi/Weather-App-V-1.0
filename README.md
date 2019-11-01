@@ -7,3 +7,4 @@ Weather is one of the major factors that affects our day-to-day routine. Startin
 Follow steps below to download and run this project in local machine
 1. Click on 'Clone or download'
 2. CLick 'Open in Desktop' if Github desktop is already installed in local machine or click on 'Download ZIP'
+3. Open it in the local machine
