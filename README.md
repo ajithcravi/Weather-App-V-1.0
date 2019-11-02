@@ -18,3 +18,4 @@ Follow steps below to download and run this project in local machine
 ## Working
 
 1. Open the index.html to start the application
+![Homepage](images/Screenshot (4).png)
