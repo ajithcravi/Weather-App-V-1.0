@@ -19,4 +19,4 @@ Follow steps below to download and run this project in local machine
 
 1. Open the index.html to start the application
 
-![Homepage](./images/Screenshot (4).png)
+![Homepage](https://github.com/ajithcravi/Weather-App-V-1.0/tree/master/images/Screenshot (7).png)
