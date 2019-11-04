@@ -20,3 +20,15 @@ Follow steps below to download and run this project in local machine
 1. Open the index.html to start the application
 
 ![Home Screen](images/Home.png)
+
+2. Type input in the input box given
+
+![Input](images/Input.png)
+
+3. Result will be displayed.
+
+![Result](images/Weather.png)
+
+4. CLick on the units to change from one to another
+
+![Unit Change](images/Unit.png)
