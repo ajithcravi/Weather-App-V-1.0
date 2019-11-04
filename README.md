@@ -35,4 +35,4 @@ Follow steps below to download and run this project in local machine
 
 ## Author
 
-[*Ajith C Ravi*](https://github.com/ajithcravi)
+[**Ajith C Ravi**](https://github.com/ajithcravi)
