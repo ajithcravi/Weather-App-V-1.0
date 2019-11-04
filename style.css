@@ -2,6 +2,13 @@
 Description: This is a weather app that shows weather of pre-defined some cities*/
 
 /*Left section*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
 #leftHalf {
     position: relative;
     width: 50%;
@@ -69,7 +76,7 @@ Description: This is a weather app that shows weather of pre-defined some cities
     cursor: pointer;
 }
 
-#cel:{
+#cel {
     color: blue;
 }
 

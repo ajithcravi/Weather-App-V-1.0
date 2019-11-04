@@ -1,56 +1,60 @@
 <!--This is a weather app that shows weather of main cities
 Description: This is a weather app that shows weather of pre-defined some cities-->
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Weather App</title>
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <body onload="day(), setTimeout(updateClock, 1000);">
-        <div id="leftHalf">
-            <div id="leftContent">
-                <h1 id="firstWord">Weather App</h1>
-            </div>
-        </div>
-        <div id="rightHalf">
-            <div id="rightContent">
-                <div id="cityState"></div>
-                <div id="dayTime"></div>
-                <div id="climate"></div>
-                <div >
-                    <span id="temperature"></span>
-                    <span id="cel" onclick="cal('C')">&deg;C</span>
-                    <span id="fah" onclick="cal('F')">&deg;F</span>
-                    </div>
+    <script type="text/javascript" src="weather.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-                <!-- </div>
-                <div><a onclick= "return FToC()">&#8451;</a>
-                    <a onclick= "return CToF()">&#8457;</a></div> -->
-                <div id="search" >
-                    <h5>Enter city name <br>
-                        <input id="city" list="cities" placeholder="City, State" onchange="return returnCity()">
-                        <datalist id="cities" >
-                            <option value="Ahmedabad, Gujarat"></option>
-                            <option value="Bangalore, Karnataka"></option>
-                            <option value="Chennai, Tamil Nadu"></option>
-                            <option value="Hosur, Tamil Nadu"></option>
-                            <option value="Hyderabad, Telangana"></option>
-                            <option value="Jaipur, Rajastan"></option>
-                            <option value="Kolkata, West Bengal"></option>
-                            <option value="Mumbai, Maharashtra"></option>
-                            <option value="New Delhi, Delhi"></option>
-                            <option value="Pune, Maharashtra"></option>
-                            <option value="Surat, Gujarat"></option>
-                            <option value="Tirunelveli, Tamil Nadu"></option>
-                        </datalist> </h5>
-                </div>
-            </div>
+    <title>Weather App</title>
+  </head>
+  <body onload="day(), setTimeout(updateClock, 1000);">
+    <div id="leftHalf">
+      <div id="leftContent">
+        <h1 id="firstWord">Weather App</h1>
+      </div>
+    </div>
+    <div id="rightHalf">
+      <div id="rightContent">
+        <div id="cityState"></div>
+        <div id="dayTime"></div>
+        <div id="climate"></div>
+        <div>
+          <span id="temperature"></span>
+          <span id="cel" onclick="cal('C')">&deg;C</span>
+          <span id="fah" onclick="cal('F')">&deg;F</span>
         </div>
-        <!-- <h1 id="sample">hello</h1>
-        <button onclick="cal('F')">click1</button>
-        <button onclick="cal('C')">click2</button> -->
-    </body>
-<script type="text/javascript" src="weather.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
+
+        <div id="search">
+          <h5>
+            Enter city name <br />
+            <input
+              id="city"
+              list="cities"
+              placeholder="City, State"
+              onchange="return returnCity()"
+            />
+            <datalist id="cities">
+              <option value="Ahmedabad, Gujarat"></option>
+              <option value="Bangalore, Karnataka"></option>
+              <option value="Chennai, Tamil Nadu"></option>
+              <option value="Hosur, Tamil Nadu"></option>
+              <option value="Hyderabad, Telangana"></option>
+              <option value="Jaipur, Rajastan"></option>
+              <option value="Kolkata, West Bengal"></option>
+              <option value="Mumbai, Maharashtra"></option>
+              <option value="New Delhi, Delhi"></option>
+              <option value="Pune, Maharashtra"></option>
+              <option value="Surat, Gujarat"></option>
+              <option value="Tirunelveli, Tamil Nadu"></option>
+            </datalist>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
