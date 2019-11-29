@@ -4,87 +4,86 @@ Description: This is a weather app that shows weather of pre-defined some cities
 /*Left section*/
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-
 #leftHalf {
-    position: relative;
-    width: 50%;
-    float: left;
-    height: 98vh;
-    background-color: #0080ff;
-    z-index: 1010101010;
-    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
-    font-size: 1.75em;
+  position: relative;
+  width: 50%;
+  float: left;
+  height: 98vh;
+  background-color: #0080ff;
+  z-index: 1010101010;
+  font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+  font-size: 1.75em;
 }
 
 #rightContent {
-    padding-left: 10%;
-    padding-top: 15%;
+  padding-left: 10%;
+  padding-top: 15%;
 }
 
 /*Right Section*/
 #rightHalf {
-    position: relative;
-    width: 50%;
-    float: right;
-    height: 98vh;
-    background-color: #eee;
-    z-index: 1010101010;
-    font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: 50%;
+  float: right;
+  height: 98vh;
+  background-color: #eee;
+  z-index: 1010101010;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #leftContent {
-    padding-left: 25%;
-    padding-top: 40%;
+  padding-left: 25%;
+  padding-top: 40%;
 }
 
 /*City and state styling*/
-#cityState{
-    font-size: 1.5em;
+#cityState {
+  font-size: 1.5em;
 }
 
 /*Dat and Time styling*/
-#dayTime{
-    margin-top: 1%;
-    font-size: 0.75em;
+#dayTime {
+  margin-top: 1%;
+  font-size: 0.75em;
 }
 
 /*CLimate styling*/
-#climate{
-    margin-top: 1%;
-    font-size: 0.75em;
+#climate {
+  margin-top: 1%;
+  font-size: 0.75em;
 }
 
 /*Temperature stylin*/
-#temperature{
-    margin-top: 5%;
-    font-size: 2em;
-    font-weight: bolder;
+#temperature {
+  margin-top: 5%;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
 /*Search bar styling*/
-#search{
-    position: fixed;
-    top: 60%;
+#search {
+  position: fixed;
+  top: 60%;
 }
 
-#cel:hover{
-    color: red;
-    cursor: pointer;
+#cel:hover {
+  color: red;
+  cursor: pointer;
 }
 
 #cel {
-    color: blue;
+  color: blue;
 }
 
-#fah:hover{
-    color: red;
-    cursor: pointer;
+#fah:hover {
+  color: red;
+  cursor: pointer;
 }
 
-#fah:active{
-    color: blue;
+#fah:active {
+  color: blue;
 }
